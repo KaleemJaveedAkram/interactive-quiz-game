@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root { font-family: 'DM Sans', sans-serif; color: #18213b; background: #f5f7ff; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 50% -12%, #e8eaff 0, #f5f7ff 47rem); }
+button { font: inherit; }
+.display-font { font-family: 'Space Grotesk', sans-serif; }
+.answer-option { transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease; }
+.answer-option:hover:not(:disabled) { transform: translateY(-2px); border-color: #8b83ff; box-shadow: 0 8px 22px #6c63ff14; }
+.answer-option.selected { border-color: #7067f0; background: #f1f0ff; box-shadow: 0 0 0 3px #7067f01c; }
+.answer-option.correct { border-color: #25a778; background: #e9fbf3; }
+.answer-option.incorrect { border-color: #ed6b7d; background: #fff0f2; }
+.fade-in { animation: rise .38s ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
